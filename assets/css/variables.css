@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
+
+/* fonte da página */
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    /*DARK BLUEs*/
+    --dark-blue-100: #609ED4;
+    --dark-blue-200: #356EA9;
+    --dark-blue-300: #0A3871;
+    --dark-blue-400: #072B61;
+    --dark-blue-500: #052051;
+
+    /* LIGHT BLUEs */
+    --light-blue-100: #F3F5FC;
+    --light-blue-200: #EFF1FA;
+    --light-blue-300: #E9ECF8;
+    --light-blue-400: #AAB2D5;
+    --light-blue-500: #757FB2;
+
+    /* GRAYs */
+    --gray-100: #CED4DA;
+    --gray-200: #ADB5BD;
+    --gray-300: #868E96;
+    --gray-400: #495057;
+    --gray-500: #343A40;
+
+    /* SHADOW */
+    --shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+.dark-mode:root {
+    /*DARK BLUEs*/
+    --light-blue-100: #072B61;
+    --light-blue-200: #072B61;
+    --light-blue-300: #072B61;
+    --light-blue-400: #072B61;
+    --light-blue-500: #052051;
+
+    /* LIGHT BLUEs */
+    --dark-blue-100: #757FB2;
+    --dark-blue-200: #757FB2;
+    --dark-blue-300: #757FB2;
+    --dark-blue-400: #757FB2;
+    --dark-blue-500: #757FB2;
+
+    /* GRAYs */
+    --gray-500: #CED4DA;
+    --gray-400: #ADB5BD;
+    --gray-300: #ADB5BD;
+    --gray-200: #ADB5BD;
+    --gray-100: #ADB5BD;
+}

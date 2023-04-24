@@ -1,0 +1,510 @@
+@import url(variables.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css);
+
+.light-mode {
+    background: linear-gradient(var(--light-blue-200), var(--light-blue-300), var(--light-blue-300), var(--light-blue-400));
+    min-height: 100vh;
+}
+
+
+/* Header */
+header {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header .dark-logo {
+    display: block;
+    min-width: 2.5%;
+    margin: 1em 0 1em 2em;
+}
+
+.dark-logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.light-logo {
+    display: none;
+    min-width: 2.5%;
+    margin: 1em 0 1em 2em;
+}
+
+.light-logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.dark-logo:hover,
+.light-logo:hover {
+    box-shadow: var(--shadow);
+    transform: scale(1.09);
+    transition: 0.25s;
+}
+
+header h1 {
+    font-size: 1.5em;
+    color: var(--dark-blue-500);
+}
+
+header .dark-mode-button {
+    display: block;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: var(--dark-blue-300);
+}
+
+header .light-mode-button {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: var(--dark-blue-300);
+}
+
+header .dark-mode-button:hover {
+    box-shadow: var(--shadow);
+    transform: scale(1.33);
+    transition: 0.25s;
+}
+
+header .light-mode-button:hover {
+    box-shadow: var(--shadow);
+    transform: scale(1.33);
+    transition: 0.25s;
+}
+
+/* Main */
+main {
+    display: flex;
+    width: 100%;
+    height: 85vh;
+    margin: 0 auto;
+    gap: 0 3em;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main: Container Encrypt */
+.container-encrypt {
+    display: flex;
+    width: 45%;
+    height: 525px;
+    flex-direction: column;
+    gap: 1em 0;
+}
+
+.container-encrypt textarea {
+    width: 100%;
+    height: 375px;
+    outline: none;
+    border: none;
+    resize: none;
+    cursor: default;
+    background: transparent;
+    font-size: 2.25em;
+    color: var(--dark-blue-300);
+}
+
+.container-encrypt textarea::placeholder {
+    font-size: 1em;
+    color: var(--dark-blue-300);
+}
+
+.container-encrypt textarea::selection {
+    background: var(--dark-blue-300);
+    color: white;
+}
+
+.encrypt-warning {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.encrypt-warning-content {
+    display: flex;
+    gap: 0 0.5em;
+    padding: 0.5em;
+    color: var(--gray-400);
+    font-weight: 600;
+}
+
+.container-buttons {
+    display: flex;
+    width: 100%;
+    gap: 0 0.5em;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-buttons button {
+    width: 250px;
+    padding: 1.5em;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: var(--shadow);
+    transform: scale(1.025);
+    transition: 0.25s;
+}
+
+.encrypt-button {
+    background-color: var(--dark-blue-300);
+    border: 1px solid var(--dark-blue-300);
+    color: white;
+}
+
+.decrypt-button {
+    background: transparent;
+    border: 1px solid var(--dark-blue-300);
+    color: var(--dark-blue-300);
+    font-weight: bold;
+}
+
+/* Main: Container Decrypt */
+.container-decrypt {
+    display: flex;
+    width: 25%;
+    height: 525px;
+    /*650px - 125*/
+    border-radius: 2em;
+    box-shadow: var(--shadow), var(--shadow), var(--shadow), var(--shadow);
+}
+
+/* Main: unsuccessful mesage */
+.unsuccessful {
+    display: flex;
+    flex-direction: column;
+    gap: 2em 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.vector-image {
+    display: flex;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+}
+
+.vector-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.decrypt-warning {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    text-align: center;
+    gap: 1em 0;
+}
+
+.decrypt-warning strong {
+    font-size: 24px;
+    color: var(--gray-500);
+    font-weight: bold;
+}
+
+.decrypt-warning p {
+    font-size: 1em;
+    color: var(--gray-400);
+    font-weight: 400;
+}
+
+
+/* Main: successful mesage */
+.successful {
+    display: none;
+    flex-direction: column;
+    gap: 1em 0;
+}
+
+.successful textarea {
+    width: 100%;
+    height: 375px;
+    outline: none;
+    border: none;
+    resize: none;
+    cursor: default;
+    font-size: 2.25em;
+    color: var(--dark-blue-300);
+    background: transparent;
+}
+
+.successful textarea::placeholder {
+    font-size: 1em;
+    color: var(--dark-blue-300);
+}
+
+.successful textarea::selection {
+    background: var(--dark-blue-300);
+    color: white;
+}
+
+.copy-warning {
+    display: flex;
+    visibility: hidden;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.copy-warning-content {
+    display: flex;
+    gap: 0 0.5em;
+    padding: 0.5em;
+}
+
+.copy-button {
+    background: transparent;
+    color: var(--dark-blue-300);
+    border: 1px solid var(--dark-blue-300);
+    font-weight: bold;
+}
+
+/* borda animada, para situações do js*/
+/* https://codepen.io/Huhtamaki/pen/GPzwPY */
+.block {
+    border-radius: 32px;
+    position: relative;
+    background: transparent;
+    color: white;
+    font-weight: 400;
+}
+
+.block:before,
+.block:after {
+    border-radius: 32px;
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg, var(--dark-blue-100), var(--dark-blue-200), var(--light-blue-400), var(--light-blue-500), var(--dark-blue-300), var(--dark-blue-400), var(--dark-blue-100), var(--dark-blue-200), var(--light-blue-400), var(--light-blue-500), var(--dark-blue-300), var(--dark-blue-400));
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: steam 10s linear infinite;
+}
+
+@keyframes steam {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.block:after {
+    filter: blur(10px);
+}
+
+/* Footer */
+footer {
+    display: flex;
+    width: 100%;
+    height: 5vh;
+    gap: 0 1em;
+    align-items: center;
+    justify-content: center;
+}
+
+footer i {
+    font-size: 1.75em;
+    color: var(--dark-blue-500);
+    cursor: pointer;
+}
+
+footer i:hover {
+    transform: scale(1.25);
+    transition: 0.25s;
+}
+
+footer strong {
+    font-size: 1.25em;
+    font-style: italic;
+    font-weight: bold;
+    color: var(--dark-blue-500);
+}
+
+
+/* Laptop portrait */
+@media screen and (max-width: 1059px) {
+
+    header {
+        height: auto;
+    }
+
+    main {
+        height: auto;
+        gap: 2em;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-encrypt {
+        height: auto;
+        margin-top: 5%;
+        gap: 1em;
+    }
+
+    .container-encrypt textarea {
+        height: 250px;
+    }
+
+    .encrypt-warning {
+        justify-content: center;
+    }
+
+    .container-decrypt {
+        width: 45%;
+        height: auto;
+        margin-bottom: 5%;
+        justify-content: center;
+    }
+
+    .decrypt-warning {
+        margin: 0 0 5% 0;
+    }
+
+    .vector-image img {
+        display: none;
+    }
+
+    .successful {
+        width: 100%;
+        height: auto;
+        gap: 0.75em;
+    }
+
+    .successful textarea {
+        height: 250px;
+    }
+
+    .successful .container-buttons {
+        margin-bottom: 3%;
+    }
+
+    footer {
+        height: auto;
+    }
+
+}
+
+/* Tablet/iPad portrait */
+@media screen and (max-width: 1024px) and (max-height: 930px) {
+
+    header {
+        height: auto;
+    }
+
+    main {
+        height: auto;
+    }
+
+    .container-encrypt {
+        width: 66%;
+        height: auto;
+    }
+
+    .container-encrypt textarea {
+        height: 150px;
+    }
+
+    .container-decrypt {
+        width: 66%;
+        height: auto;
+    }
+
+    .successful textarea {
+        height: 150px;
+    }
+
+    footer {
+        height: auto;
+    }
+}
+
+/* Tablet  */
+@media screen and (max-width: 768px) {
+
+    .dark-mode-button,
+    .light-mode-button {
+        margin-right: 2em;
+    }
+
+}
+
+/* Smartphone portrait */
+@media screen and (max-width: 670px) {
+
+    header {
+        justify-content: space-between;
+
+    }
+
+    header h1 {
+        display: none;
+    }
+
+    header .dark-mode-button,
+    header .light-mode-button {
+        margin: 0.75em;
+        font-size: 2.75em;
+    }
+}
+
+/* Smartphone portrait */
+@media screen and (max-width: 500px) {
+
+    .container-encrypt {
+        width: 90%;
+    }
+
+    .container-buttons {
+        flex-wrap: wrap;
+        gap: 0.5em 0;
+    }
+
+    .container-decrypt {
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 365px) {
+
+    .container-encrypt textarea,
+    .container-decrypt textarea {
+        font-size: 1.5em;
+    }
+
+    .encrypt-warning-content,
+    .copy-warning,
+    .decrypt-warning strong,
+    .decrypt-warning p {
+        font-size: max(4.25vw, 11px);
+    }
+
+    .container-decrypt {
+        margin-bottom: 3em;
+    }
+
+    footer {
+        font-size: max(4.25vw, 11px);
+    }
+
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="shortcut icon" href="assets/images/one.ico" type="image/x-icon">
+    <title>ONE | First Challenge</title>
+</head>
+
+<body class="light-mode">
+    <header>
+        <div class="dark-logo" id="darkAlura">
+            <a href="https://www.alura.com.br" target="_blank"><img src="assets/images/logo.png"
+                    alt="logo da Alura"></a>
+        </div>
+        <div class="light-logo" id="lightAlura">
+            <a href="https://www.alura.com.br" target="_blank"><img src="assets/images/logo-clara.png"
+                    alt="logo da Alura"></a>
+        </div>
+        <h1>oberraiclenter nenterxt enterdufatcaitimesobern</h1>
+        <i class="fa-solid fa-circle-half-stroke dark-mode-button" id="darkMode"></i>
+        <i class="fa-solid fa-circle-half-stroke fa-rotate-180 light-mode-button" id="lightMode"></i>
+    </header>
+
+    <main>
+        <div class="container-encrypt">
+            <textarea name="text" id="textMesage" class="text" placeholder="Digite seu texto"></textarea>
+            <div class="encrypt-warning">
+                <div class="encrypt-warning-content" id="textWarning">
+                    <div class="attention-icon">
+                        <i class="fa-solid fa-exclamation fa-beat" id="attentionIcon"></i>
+                    </div>
+                    <p>Apenas letras minúsculas e sem acento.</p>
+                </div>
+            </div>
+            <div class="container-buttons">
+                <button class="encrypt-button" id="encrypt">Criptografar</button>
+                <button class="decrypt-button" id="decrypt">Descriptografar</button>
+            </div>
+        </div>
+        <div class="container-decrypt">
+            <div class="unsuccessful" id="unsuccessful">
+                <div class="vector-image">
+                    <img src="assets/images/searching.png" alt="garoto com uma lupa" class="vector">
+                </div>
+                <div class="decrypt-warning">
+                    <strong>Nenhuma mensagem encontrada</strong>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+            </div>
+            <div class="successful" id="successful">
+                <textarea name="text-answer" id="textResult" class="text-answer" disabled></textarea>
+                <div class="copy-warning">
+                    <div class="copy-warning-content" id="copyMsg">
+                        <div class="attention-icon">
+                            <i class="fa-solid fa-exclamation fa-bounce"></i>
+                        </div>
+                        <p>Texto copiado para o clipboard.</p>
+                    </div>
+                </div>
+                <div class="container-buttons">
+                    <button class="copy-button" id="copy"><i class="fa-regular fa-clone fa-shake"></i> Copiar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <a href="https://github.com/loolcas" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <strong>feito por Lucas de Moraes</strong>
+        <a href="https://twitter.com/notLoolcas" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+    </footer>
+</body>
+
+<script src="assets/js/index.js"></script>
+
+</html>
