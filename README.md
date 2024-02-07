@@ -1,6 +1,22 @@
-[![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=0A3871&size=50&center=true&vCenter=true&width=1000&lines=Projeto+Decodificador;Feito+por+Lucas+de+Moraes;@loolcas+:%29)](https://git.io/typing-svg)
+<h3 align="center">Criptografia</h3>
 
-<h2 align="center"> O desafio propõe a criação de uma aplicação que criptografa textos. </h2>
+<div align="center">
+
+  <img width="75px" height="75px" src="https://github.com/lucas-adm/one-challenge-springboot-hotel/assets/118030896/d9ea1b67-961e-4ce5-a236-dc29c18b225c">
+  
+  ###### JavaScript
+  
+</div>
+
+#
+
+### ▶ Acesse a aplicação por <a href="https://lucas-adm.github.io/ONE-1stChallenge/">*aqui*</a>
+
+<details>
+
+<summary>Saiba mais</summary>
+
+<h4>O desafio propõe a criação de uma aplicação que criptografa textos.</h4>
 
 **As "chaves" de criptografia utilizadas são:**
 * A letra "e" é convertida para "enter"
@@ -28,39 +44,4 @@ O resultado deve ser exibido na tela.
 </i>
 </p>
 
-<h2 align="center"><i>Assista ao vídeo demonstrativo desta aplicação!</i></h2>
-<p align="center">
-<a href="https://www.youtube.com/watch?v=I1Ru6MDmJME" target="_blank"><img alt="imagem de um iframe" src="https://www.plainlight.com/images/youtube-iframe-api-player-cover.png"></a>
-</p>
-
-<table align="center">
-  <thead>
-    <tr>
-      <td>Tecnologias</td>
-      <td>Métodos</td>
-      <td>Biblioteca</td>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>HTML5</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>CSS3</td>
-      <td>Flexbox</td>
-      <td>GoogleFonts, Font Awesome</td>
-    </tr>
-    <tr>
-      <td>JavaScript</td>
-      <td>DOM, Replace</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-
-> Deploy
-```ruby
-https://loolcas.github.io/ONE-1stChallenge/
-```
+</details>
