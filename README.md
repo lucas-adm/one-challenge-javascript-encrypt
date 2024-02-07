@@ -45,3 +45,5 @@ O resultado deve ser exibido na tela.
 </p>
 
 </details>
+
+![](https://i.imgur.com/GOMGgBJ.png)
