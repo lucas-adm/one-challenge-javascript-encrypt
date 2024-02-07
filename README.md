@@ -10,7 +10,7 @@
 
 #
 
-### ▶ Acesse a aplicação por <a href="https://lucas-adm.github.io/ONE-1stChallenge/">*aqui*</a>
+### ▶ Acesse a aplicação por <a href="https://lucas-adm.github.io/one-challenge-javascript-encrypt/">*aqui*</a>
 
 <details>
 
